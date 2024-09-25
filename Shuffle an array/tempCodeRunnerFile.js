@@ -1,0 +1,1 @@
+array[random], array[i]

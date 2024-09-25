@@ -1,0 +1,70 @@
+header{
+    color:white;
+    background: linear-gradient(red, purple);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+}
+
+section{
+    grid-column: span 2;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#AnalogTab{
+    display: block;
+}
+
+#DigitalTab{
+    display: none;
+}
+
+.container{
+    /* display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; */
+    grid-gap: 5px;
+    min-width: 100;
+    margin: 0;
+}
+
+.led_div {
+    text-align: center;
+}
+
+.led_span {
+    color: green;
+    font-size: 100px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: aliceblue;
+    color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: rgba(98, 182, 255, 0.781);
+}
+
+button:active{
+    background-color: rgb(49, 167, 246);
+}
+
+#mode{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ALL Wheelchair</title>
+    
+    <!-- import MQTT Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script> 
+    
+    <!--Import Plotly Library  -->
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <h1 id="header">ALL Wheelchair</h1>
+    <h1 id="user">User</h1>
+    <div class="buttons">
+        <button id="start" onclick="conn()">Start</button>
+        <button id="stop" onclick="disconn()">Stop</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        <label for="mode">Mode :</label>
+        <select id="mode" onchange="modeChange(event)">
+            <option>Digital</option>
+            <option>Analog</option>
+        </select>
+    </div>
+    <div class="led_div">
+        <span class="led_span" id="led_span">&#x25CF;</span>
+        <h3 id="led_label">Falling Status : Unknown</h3>
+    </div>
+    <div class="tabcontent" id="tab1">
+        <div id="digital1"></div>
+        <div id="digital2"></div>
+    </div>
+    <div class="tabcontent" id="tab2"></div>
+    <script src="index.js"></script>
+</body>
+</html>

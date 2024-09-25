@@ -1,0 +1,38 @@
+#header{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    background: linear-gradient(to right,red, purple, blue);
+}
+
+.buttons {
+    font-size: 1.2em;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: rgba(98, 182, 255, 0.781);
+}
+
+.buttons button:active{
+    background-color: rgb(49, 167, 246);
+}
+
+.buttons select{
+    font-size: 18px;
+}
+
+.led_div {
+    text-align: center;
+}
+
+.led_span {
+    color: green;
+    font-size: 100px;
+}
